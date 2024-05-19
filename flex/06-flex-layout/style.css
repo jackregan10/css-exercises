@@ -8,7 +8,7 @@ body {
 }
 
 img {
-  width: 600px;
+  width: 1000px;
 }
 
 button {
@@ -23,4 +23,47 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+/* Solution */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+button {
+  padding: 8px 16px;
+  font-weight: bold;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.footer {
+  background-color: #ddd;
+}
+.left-links, .right-links {
+  display: flex;
+  gap: 32px;
+  font-weight: bold;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+a {
+  text-decoration: none;
+  color: #666;
 }
